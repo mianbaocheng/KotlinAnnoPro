@@ -1,0 +1,4 @@
+include ':libannotationprocess'
+include ':libannotation'
+include ':app'
+rootProject.name = "KotlinAnnoPro"
