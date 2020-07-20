@@ -1,7 +1,6 @@
 package com.cb.annoprocess
 
 import com.cb.anno.MyAnnotation
-import com.google.auto.service.AutoService
 import java.io.File
 import java.lang.Exception
 import javax.annotation.processing.*
@@ -9,14 +8,13 @@ import javax.lang.model.SourceVersion
 import javax.lang.model.element.TypeElement
 import javax.tools.Diagnostic
 import javax.tools.StandardLocation
-import javax.xml.stream.Location
 
 /**
  * author chengbo
  * email chengbo@cloudwalk.cn
  * createTime 2020/7/20
  */
-@AutoService(Processor::class)
+//@AutoService(Processor::class)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 class MyAnnotationProcess : AbstractProcessor() {
     private var messager: Messager? = null
